@@ -37,3 +37,8 @@
     background: rgb(212,8,140);
     background: linear-gradient(241deg, rgba(212,8,140,1) 0%, rgba(133,7,138,1) 50%, rgba(72,6,137,1) 100%);
 }
+
+#bubble{
+    left: 35%;
+    bottom: 10%;
+}

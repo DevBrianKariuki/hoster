@@ -8,6 +8,19 @@ const App = () => (
     <div className={`${styles.paddingX} ${styles.flexCenter}`}>
       <div className={`${styles.boxWidth}`}>
         <Navbar />
+        <Hero />
+      </div>
+    </div>
+
+    <div className={`${styles.flexCenter}`}>
+      <div className={`${styles.boxWidth}`}>
+        <Banner />
+      </div>
+    </div>
+
+    <div className={`${styles.paddingX} ${styles.flexCenter}`}>
+      <div className={`${styles.boxWidth}`}>
+        <Features />
       </div>
     </div>
   </div>
