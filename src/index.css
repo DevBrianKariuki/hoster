@@ -1,3 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* *{
+    background: #000;
+} */
+
+#main-div{
+    height: 100%;
+    min-height: 100vh;
+}
+
+.buttonbg{
+    background: rgb(241,80,187);
+    background: linear-gradient(90deg, rgba(241,80,187,1) 0%, rgba(207,8,140,1) 51%, rgba(241,80,187,1) 100%);
+}
+
+.navbarbg{
+    background: rgb(39,44,61);
+    background: linear-gradient(241deg, rgba(39,44,61,1) 0%, rgba(43,54,101,1) 100%);
+}
+
+.pricingcard{
+    background: rgb(72,6,137);
+    background: linear-gradient(37deg, rgba(72,6,137,1) 0%, rgba(204,8,140,1) 62%, rgba(212,8,140,1) 100%);
+}
+
+.bluebutton{
+    background: rgb(111,235,255);
+    background: linear-gradient(126deg, rgba(111,235,255,1) 0%, rgba(94,209,247,1) 53%, rgba(38,127,229,1) 100%);
+}
+
+.whychoseuscard{
+    background: rgb(212,8,140);
+    background: linear-gradient(241deg, rgba(212,8,140,1) 0%, rgba(133,7,138,1) 50%, rgba(72,6,137,1) 100%);
+}
