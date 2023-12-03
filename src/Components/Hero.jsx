@@ -2,6 +2,7 @@ import React,{useEffect} from 'react'
 import { hero } from '../assets'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import { motion } from 'framer-motion'
 
 const Hero = () => {
   useEffect(() => {
@@ -25,9 +26,9 @@ const Hero = () => {
           </button>
         </div>
       </div>
-      <div data-aos='fade-up' >
+      <motion.div animate={{ y: [0, 40, 40, 0] }}  transition={{ repeat:Infinity, duration: 3 }} data-aos='zoom-in-up' >
         <img src={hero} className='w-[85%]' />
-      </div>
+      </motion.div>
       <div data-aos='fade-up' id='bubble' className='w-[60px] h-[60px] rounded-full absolute whychoseuscard'></div>
     </div>
   )

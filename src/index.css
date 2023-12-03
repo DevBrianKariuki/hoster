@@ -38,7 +38,21 @@
     background: linear-gradient(241deg, rgba(212,8,140,1) 0%, rgba(133,7,138,1) 50%, rgba(72,6,137,1) 100%);
 }
 
+.bluebutton{
+    background: rgb(38,127,229);
+    background: linear-gradient(278deg, rgba(38,127,229,1) 0%, rgba(111,235,255,1) 100%);
+}
+
 #bubble{
     left: 35%;
     bottom: 10%;
+}
+
+#icon{
+    top: -17%;
+}
+
+#triangle{
+    top: -12%;
+    left: 47%;
 }

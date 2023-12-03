@@ -21,6 +21,10 @@ const App = () => (
     <div className={`${styles.paddingX} ${styles.flexCenter}`}>
       <div className={`${styles.boxWidth}`}>
         <Features />
+        <Pricing />
+        <WhyChooseUs />
+        <Migration />
+        <Testimonials />
       </div>
     </div>
   </div>

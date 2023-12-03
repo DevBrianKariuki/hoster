@@ -12,21 +12,21 @@ const Banner = () => {
 
   return (
     <div data-aos='fade-up' className='navbarbg px-32 items-center py-12 mt-12 flex justify-between w-full'>
-      <div className='flex flex-col items-start w-[50%]'>
+      <div data-aos='fade-up-left' className='flex flex-col items-start w-[50%]'>
         <h1 className='font-inter font-bold text-white text-xl pb-4'>Get 10% off today</h1>
         <p className='text-gray-300 font-normal font-inter text-md'>Grab the holiday offer.This offer will end in 3 days.Hurry Up!
           Get your perfect domain starting from<span className='font-bold text-lightblue'> 149/Month</span> </p>
       </div>
-      <div className='flex items-center flex-col gap-3'>
+      <div data-aos='fade-up-right' className='flex items-center flex-col gap-3'>
         <div className='bg-white flex justify-between rounded-full p-2'>
           <input className='font-inter px-4 py-2 text-sm outline-none' placeholder='Type Your Domain Name' />
           <select data-te-select-init className='outline-none text-sm font-inter mr-3' >
-            <option value="1">.com</option>
-            <option value="2">.org</option>
-            <option value="3">.co.ke</option>
-            <option value="4">.net</option>
-            <option value="5">.store</option>
-            <option value="6">.info</option>
+            <option className='py-2' value="1">.com</option>
+            <option className='py-2' value="2">.org</option>
+            <option className='py-2' value="3">.co.ke</option>
+            <option className='py-2' value="4">.net</option>
+            <option className='py-2' value="5">.store</option>
+            <option className='py-2' value="6">.info</option>
           </select>
           <button className='flex rounded-full text-white gap-2 font-inter items-center bg-primary py-2 px-4'>
             Search
