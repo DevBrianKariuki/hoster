@@ -12,11 +12,11 @@ const WhyChooseUs = () => {
     <div className='w-full mt-12 py-12 items-center overflow-hidden flex flex-col'>
       <div className='flex items-center gap-3 pb-8 flex-col'>
         <h1 data-aos='fade-right' className='font-inter text-white font-bold text-3xl '>Why Choose Host.Co.In ?</h1>
-        <p data-aos='fade-left' className='font-inter text-center w-[60%] text-md text-gray-400'>With Host.co.in stand apart in the sphere of World Wide Web with maximum flexibility offering elevated packages
+        <p data-aos='fade-left' className='font-inter text-center sm:w-[60%] text-md text-gray-400'>With Host.co.in stand apart in the sphere of World Wide Web with maximum flexibility offering elevated packages
           for all your business needs ensuring smooth execution of your business activities.</p>
       </div>
 
-      <div className='flex w-full my-10 items-center justify-between'>
+      <div className='flex w-full flex-col sm:flex-row my-10 items-center justify-between'>
         {whyUs.map((reason, id) =>(
           <WhyCard icon={reason.icon} title={reason.title} text={reason.text} />
         ) )}
@@ -26,7 +26,7 @@ const WhyChooseUs = () => {
 }
 
 const WhyCard = ({icon, title, text}) => (
-  <div data-aos='zoom-in-up' className='flex relative py-8 px-6 h-[200px] rounded-xl w-[32%] whychoseuscard flex-col justify-center items-start'>
+  <div data-aos='zoom-in-up' className='flex relative py-8 px-6 h-[200px] my-8 rounded-xl w-[100%] sm:w-[32%] whychoseuscard flex-col justify-center items-start'>
     <div id='icon' className='w-[60px] shadow-md absolute flex items-center justify-center h-[60px] rounded-full bluebutton'>
       < img className='w-[50%]' src={icon} />
     </div>

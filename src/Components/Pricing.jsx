@@ -25,7 +25,7 @@ const Pricing = () => {
         <button onClick={() => setCurrentPlan('Yearly')} className={` ${ currentplan === 'Yearly' ? 'bg-primary text-white ' : 'bg-white text-black hover:font-bold'} py-2 px-4 font-inter rounded-full w-[100px]`}>Yearly</button>
       </div>
 
-      <div className='flex mt-5 w-full flex-row justify-between items-center'>
+      <div className='flex mt-5 w-full flex-col sm:flex-row justify-between items-center'>
         {pricing.map((price, id) =>(
           <PriceCard key={id} type={price.type} features={price.features} price={ currentplan === 'Yearly' ? ((price.price * 12) - (price.price) ) : price.price } id={price.id} description={price.description} />
         ))}
@@ -35,7 +35,7 @@ const Pricing = () => {
 }
 
 const PriceCard = ({type, price,id ,description, features}) =>(
-  <div data-aos='flip-right' className={` ${ id==='2' ? 'pricingcard border-none' : 'bg-none' } border-[1px] w-[32%] my-4 p-4 flex flex-col border-gray-400 rounded-xl`}>
+  <div data-aos='flip-right' className={` ${ id==='2' ? 'pricingcard border-none' : 'bg-none' } border-[1px] w-[100%] md:w-[32%]  my-4 p-4 flex flex-col border-gray-400 rounded-xl`}>
     <p className='font-inter text-sm text-gray-300 pt-2'>{type}</p>
     <div className='flex justify-between pt-4 items-center'>
       <div className='flex items-center'>

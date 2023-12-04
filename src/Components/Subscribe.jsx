@@ -9,8 +9,8 @@ const Subscribe = () => {
   }, [])
 
   return (
-    <div data-aos='fade-down' className='navbarbg px-32 items-center py-12 mt-12 flex justify-between w-full'>
-      <div  className='flex flex-col justify-center items-start w-[50%]'>
+    <div data-aos='fade-down' className='navbarbg px:6 md:px-32 flex-col md:flex-row items-center py-12 mt-12 flex justify-between w-full'>
+      <div  className='flex flex-col justify-center items-center md:items-start md:mb-0 mb-8 md:w-[50%]'>
         <h1 className='font-inter font-bold text-white text-xl'>Subscribe to our Newsletter</h1>
         <p className='text-gray-300 font-normal font-inter text-md'>Get Regularly News and Exclusive Offers</p>
       </div>
