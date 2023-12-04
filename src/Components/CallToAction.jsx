@@ -21,29 +21,34 @@ const CallToAction = () => {
         <p data-aos='zoom-in-up'  className='font-inter md:w-[70%] text-center text-md text-gray-300'>Get everything that you require to set up your personal / business website and establish your online presence. Service includes web hosting in India, free domain registration along with 24x7 Support.</p>
       </div>
 
-      <div className='md:w-[60%] gap-12 relative mt-6 flex md:flex-row flex-col justify-between'>
+      <div className='md:w-[65%] gap-12 relative mt-6 flex md:flex-row flex-col justify-between'>
         
         
         <div className='flex flex-col gap-4 items-center'>
           <div data-aos='fade-left' className='whychoseuscard w-[80px] flex items-center z-40 justify-center rounded-full  h-[80px] '>
           <FaRegUserCircle fontSize={46} className='text-white' />
           </div>
-          <p className='font-inter text-md font-bold text-white'>1.Register</p>
+          <p className='font-inter text-md font-bold text-white'><span className='md:hidden'>1.</span>Register</p>
         </div>
+
         <img id='line1' data-aos='fade-down' src={dashedline1} className='hidden md:flex absolute z-0' />
+
         <div className='flex flex-col gap-4 items-center'>
           <div data-aos='fade-left' className='whychoseuscard w-[80px] flex items-center z-40 justify-center rounded-full  h-[80px] '>
           <FaCheck fontSize={46} className='text-white' />
           </div>
-          <p className='font-inter text-md font-bold text-white text-center'>2.Choose Plan</p>
+          <p className='font-inter text-md font-bold text-white text-center'><span className='md:hidden'>2.</span>Choose Plan</p>
         </div>
+
         <div className='flex flex-col  gap-4 items-center'>
           <div data-aos='fade-left' className='whychoseuscard w-[80px] flex items-center z-40 justify-center rounded-full  h-[80px] '>
           <IoIosGlobe fontSize={46} className='text-white' />
           </div>
-          <p className='font-inter text-md font-bold text-center text-white'>3.See your website live</p>
+          <p className='font-inter text-md font-bold text-center text-white'><span className='md:hidden'>3.</span>See your website live</p>
         </div>
+
         <img id='line2' data-aos='fade-down' src={dashedline2} className='absolute hidden md:flex' />
+
       </div>
       <div  className='flex flex-col mt-12 gap-4'>
         <h1 data-aos='fade-up-right' className="font-bold font-inter text-white text-xl">Starting at just Ksh 1000/yr</h1>

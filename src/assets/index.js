@@ -19,10 +19,14 @@ import backupsolutions from './backupsolutions.svg'
 import hostingability from './hostingability.png'
 import loadingspeed from './loadingspeed.png'
 import networksecurity from './networksecurity.png'
+import close from './close.png'
+import menu from './menu.png'
 
 
 export {
     hero,
+    menu,
+    close,
     sslcertificates,
     dashedline2,
     dashedline1,
