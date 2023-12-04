@@ -26,6 +26,14 @@ const App = () => (
         <Migration />
         <Testimonials />
         < AddOns />
+        <CallToAction />
+      </div>
+    </div>
+
+    <div className={`${styles.flexCenter}`}>
+      <div className={`${styles.boxWidth}`}>
+        <Subscribe />
+        <Footer />
       </div>
     </div>
   </div>

@@ -1,7 +1,14 @@
 import React, {useEffect} from 'react'
 import { addOns } from '../constants';
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const AddOns = () => {
+
+  useEffect(() => {
+    AOS.init({duration: 2000})
+  }, [])
+  
   return (
     <div className='w-full mt-12 py-12 items-center overflow-hidden flex flex-col'>
       <div className='flex items-center gap-3 pb-8 flex-col'>
@@ -11,16 +18,25 @@ const AddOns = () => {
 
       <div className='flex justify-between items-center'>
         {addOns.map((addon) =>(
-          <AddonCard />
+          <AddonCard key={addon.id} id={addon.id} icon={addon.icon} title={addon.title} description={addon.description} price={addon.price} />
         ))}
       </div>
-
     </div>
   )
 }
 
 const AddonCard = ({ id, icon, title, description, price }) =>(
-  <div className='flex flex-col w-[32%] whychoseuscard'></div>
+  <div data-aos= 'fade-up-right' className='flex z-5 relative flex-col w-[32%] h-[22rem] items-center p-6 whychoseuscard rounded-2xl'>
+    <img src={icon} alt="" className={` ${ id === 2 ? 'w-[100px]' : 'w-[55px]' }  py-5`}/>
+    <h1 className='font-inter text-xl font-bold text-white'>{title}</h1>
+    <p className='font-inter text-center text-sm text-gray-300 py-4'>{description}</p>
+    <span className={` ${ id === 2 ? 'mt-3' : 'mt-2'} font-inter flex items-center text-white text-xl font-bold`}>
+      Ksh {price}.00/yr
+    </span>
+    <div id='learnbutton' className='absolute bottom-0 rounded-full bluebutton'>
+      <button className='px-14 py-3 rounded-full flex items-center font-inter text-white'>Learn more</button>
+    </div>
+  </div>
 )
 
 export default AddOns;

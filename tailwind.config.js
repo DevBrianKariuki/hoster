@@ -11,6 +11,7 @@ export default {
         secondary: "#480689",
         bgColorOne: "#101528",
         bgColorTwo: "#132058",
+        bgFooter: "#03091D",
         lightblue: "#6FEBFF",
         dimBlue: "rgba(9, 151, 124, 0.1)",
       },

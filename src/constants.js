@@ -1,6 +1,5 @@
 
-import { happycustomers, ratings, avatar1, avatar2, avatar3,  uptime, servers, customersupport, tiers, loadingspeed, networksecurity, hostingability } from './assets'
-import { FaStar } from "react-icons/fa";
+import { happycustomers,sslcertificates, spamexperts,backupsolutions,  ratings, avatar1, avatar2, avatar3,  uptime, servers, customersupport, tiers, loadingspeed, networksecurity, hostingability } from './assets'
 
 export const navLinks = [
     {
@@ -35,6 +34,93 @@ export const navLinks = [
     },
 ]
 
+export const footerLinks = [
+    {
+        title: 'Company',
+        links: [
+            {
+                name: 'About Us',
+                link: '#'
+            },
+            {
+                name: 'Contact Us',
+                link: '#'
+            },
+            {
+                name: 'Client Area',
+                link: '#'
+            },
+            {
+                name: 'Data Center',
+                link: '#'
+            },
+            {
+                name: 'Site Map',
+                link: '#'
+            },
+        ]
+    },
+    {
+        title: 'Services',
+        links: [
+            {
+                name: 'cPanel Hosting',
+                link: '#'
+            },
+            {
+                name: 'VPS Hosting',
+                link: '#'
+            },
+            {
+                name: 'Dedicated Servers',
+                link: '#'
+            },
+            {
+                name: 'Cloud Hosting',
+                link: '#'
+            },
+            {
+                name: 'Reseller Hosting',
+                link: '#'
+            },
+        ]
+    },
+    {
+        title: 'Resources',
+        links: [
+            {
+                name: 'Web Hosting Blogs',
+                link: '#'
+            },
+            {
+                name: 'Knowledge Base',
+                link: '#'
+            }
+        ]
+    },
+    {
+        title: 'Legal',
+        links: [
+            {
+                name: 'Terms of Service',
+                link: '#'
+            },
+            {
+                name: 'Service Level Agreement',
+                link: '#'
+            },
+            {
+                name: 'Privacy Policy',
+                link: '#'
+            },
+            {
+                name: 'Billing Policy',
+                link: '#'
+            }
+        ]
+    },
+]
+
 export const addOns = [
     {
         id:1,
@@ -52,7 +138,7 @@ export const addOns = [
     },
     {
         id:3,
-        icon: spamexperts,
+        icon: backupsolutions,
         title: 'Backup Solutions',
         description: "Let the experts handle your crucial data, backup your data from reliable backup and recovery solution from HOST.CO.IN",
         price: '500'

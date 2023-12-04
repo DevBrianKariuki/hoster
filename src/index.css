@@ -43,6 +43,20 @@
     background: linear-gradient(278deg, rgba(38,127,229,1) 0%, rgba(111,235,255,1) 100%);
 }
 
+#line1{
+    top: 20%;
+    left: 5%;
+}
+
+#line2{
+    top: 20%;
+    left: 50%;
+}
+
+#learnbutton{
+    bottom: -7%;
+}
+
 #bubble{
     left: 35%;
     bottom: 10%;
