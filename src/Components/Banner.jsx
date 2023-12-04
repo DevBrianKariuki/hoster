@@ -17,8 +17,8 @@ const Banner = () => {
         <p className='w-full text-gray-300 font-normal text-center sm:text-left font-inter text-md'>Grab the holiday offer.This offer will end in 3 days.Hurry Up!
           Get your perfect domain starting from<span className='font-bold text-lightblue'> 149/Month</span> </p>
       </div>
-      <div data-aos='fade-up-right' className='flex items-center mx-4 flex-col gap-3'>
-        <div className='bg-white flex justify-between rounded-full p-2'>
+      <div data-aos='fade-up-right' className='flex items-center w-full flex-col gap-3'>
+        <div className='bg-white flex-1 flex justify-between rounded-full p-2'>
           <input className='font-inter px-4 py-2 text-sm outline-none' placeholder='Type Your Domain Name' />
           <select data-te-select-init className='outline-none bg-white text-sm font-inter mr-3' >
             <option className='py-2' value="1">.com</option>

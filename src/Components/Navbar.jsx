@@ -16,7 +16,7 @@ const Navbar = () => {
   return (
     <div className='w-full flex flex-col py-6'>
       <div className='flex w-full justify-center sm:justify-between'>
-        <div className='flex w-full justify-between pb-4 gap-8'>
+        <div className='flex w-full md:justify-start justify-between pb-4 gap-8'>
           <div className='flex items-center gap-2'>
             <IoMdMail className='text-white ' />
             <p className='font-inter text-white text-sm cursor-pointer '>hosting@gmail.com</p>
@@ -26,7 +26,7 @@ const Navbar = () => {
             <p className='font-inter text-white text-sm cursor-pointer '>(+254) 703 814228</p>
           </div>
         </div>
-        <div className='flex hidden sm:flex gap-6'>
+        <div className='flex hidden sm:flex pb-4 gap-8'>
           <div className='flex items-center gap-2'>
             <BiSupport fontSize={20} className='text-white' />
             <p className='font-inter text-white text-sm cursor-pointer'>Support</p>
@@ -51,16 +51,18 @@ const Navbar = () => {
                 onClick={() => setToggle(!toggle)}
               />
 
-              <div className={` ${ toggle ? 'flex' : 'hidden' } absolute navbarbg w-[200px]`}>
+              <div className={` ${ toggle ? 'flex' : 'hidden' } absolute rounded-xl flex justify-center items-center top-12 right-0 z-50 whychoseuscard w-[250px]`}>
 
-                <div className='flex flex-col'>
-                  <ul className='list-none flex gap-4'>
+                <div className='flex flex-col p-6'>
+                  <ul className='list-none flex-col text-center flex gap-6'>
                     {navLinks.map((nav, index) =>(
-                      <li className='font-inter cursor-pointer hover:text-primary text-md font-normal text-white' key={index}>
+                      <li className='font-inter font-medium cursor-pointer hover:text-primary text-md font-normal text-white' key={index}>
                         {nav.title}
                       </li>
                     ))}
                   </ul>
+                  <button className='bluebutton mt-6 px-12 py-2 font-inter text-white rounded-full'>Login</button>
+                  <button className='bluebutton mt-4 px-12 py-2 font-inter text-white rounded-full'>Sign up</button>
                 </div>
               </div>
 
@@ -73,7 +75,7 @@ const Navbar = () => {
 
 
 
-      <div className='flex hidden sm:flex h-[55px] rounded-sm items-center justify-between my-3 p-6 navbarbg'>
+      <div className='flex hidden md:flex h-[55px] rounded-sm items-center justify-between my-3 p-6 navbarbg'>
         <div>
           <img src={logo} className='w-[120px]'/>
         </div>

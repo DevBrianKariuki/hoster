@@ -11,7 +11,7 @@ const Hero = () => {
   
 
   return (
-    <div className='w-full relative flex flex-col sm:flex-row sm:justify-between items-center overflow-hidden'>
+    <div className='w-full relative z-0 flex flex-col sm:flex-row sm:justify-between items-center overflow-hidden'>
       <div className='flex items-center sm:items-start flex-col gap-5'>
         <h1 data-aos='fade-right' className='font-inter text-center sm:text-left mt-8 text-4xl sm:text-3xl leading-[48px] font-extrabold text-white'>Reliable Web Hosting Platform<br /> for Your Website</h1>
         <p data-aos='fade-up-right' className='font-inter text-center sm:text-left mt-2 mb-4 sm:my-0 text-lg leading-[36px] sm:text-md sm:w-[100%] w-[80%] text-gray-300'>
