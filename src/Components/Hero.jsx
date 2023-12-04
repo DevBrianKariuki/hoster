@@ -14,7 +14,7 @@ const Hero = () => {
     <div className='w-full realtive flex justify-between items-center overflow-hidden'>
       <div className='flex flex-col gap-5'>
         <h1 data-aos='fade-right' className='font-inter text-3xl font-extrabold text-white'>Reliable Web Hosting Platform<br /> for Your Website</h1>
-        <p data-aos='fade-up-right' className='font-inter text-md text-gray-500'>
+        <p data-aos='fade-up-right' className='font-inter text-md text-gray-300'>
           Fully Managed High Performance Web Hosting With Free Domain
         </p>
         <div data-aos='fade-left' className='flex gap-4'>

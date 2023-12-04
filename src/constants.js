@@ -35,6 +35,30 @@ export const navLinks = [
     },
 ]
 
+export const addOns = [
+    {
+        id:1,
+        icon: sslcertificates,
+        title: 'SSL Certificate',
+        description: "Secure your transactions, website's communication and internet browser with SSL encryption certificates of HOST.CO.IN",
+        price: '2499'
+    },
+    {
+        id:2,
+        icon: spamexperts,
+        title: 'Spam Experts',
+        description: "Protect your mailbox from Spam, virus and malware with a complete solution from India's web hosting provider HOST.CO.IN",
+        price: '900'
+    },
+    {
+        id:3,
+        icon: spamexperts,
+        title: 'Backup Solutions',
+        description: "Let the experts handle your crucial data, backup your data from reliable backup and recovery solution from HOST.CO.IN",
+        price: '500'
+    },
+]
+
 export const clients = [
     {
         id:1,

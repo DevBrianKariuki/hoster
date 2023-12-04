@@ -25,6 +25,7 @@ const App = () => (
         <WhyChooseUs />
         <Migration />
         <Testimonials />
+        < AddOns />
       </div>
     </div>
   </div>
